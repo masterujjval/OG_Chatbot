@@ -1,8 +1,8 @@
 # llm_service.py
 import os
 import requests
+from config import API_KEY
 
-API_KEY = "AIzaSyC5D-gukYyzY7uIH5pgVjlTVwTRUHyy1xA"
 print(API_KEY)
 BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
