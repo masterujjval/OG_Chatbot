@@ -1,0 +1,9 @@
+flask
+python-dotenv
+requests
+google-generativeai
+Pillow
+python-docx
+openpyxl
+python-pptx
+PyPDF2
