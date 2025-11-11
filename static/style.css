@@ -344,8 +344,8 @@ body {
 
 .input-container {
     padding: 20px;
-    border-top: 1px solid var(--border-color);
-    background-color: rgb(62,180,137);
+    background-color: #fba8a4;
+    background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
 }
 
 .input-wrapper {
