@@ -1,0 +1,3 @@
+replica: 1
+frontend:
+  image: "hunterzoro/chatbot:latest"

@@ -14,7 +14,7 @@ function loadHistory() {
             historyList.innerHTML += `
                 <div class="history-item">
                     <div class="history-content" onclick="loadSession('${session.session_id}')"> 
-                        <div class="history-prompt">${session.first_prompt.substring(0, 40)}...</div>
+                        <div class="history-prompt">${session.first_prompt.substring(0, 15)}...</div>
                         <div class="history-meta">
                             <span class="history-time">${new Date(session.last_timestamp).toLocaleDateString()}</span>
                             <span class="message-count">${session.message_count} ${messageText}</span>

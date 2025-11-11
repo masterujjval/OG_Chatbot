@@ -4,7 +4,7 @@ metadata:
   name: chatbot
 
 spec:
-  replicas: 1
+  replicas: {{ .Values.replica }}
   selector:
     matchLabels:
       app: chatbot
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: chatbot:latest
+          image: {{ .Values.frontend.image }}
           imagePullPolicy: IfNotPresent
           ports:
            - containerPort: 5000
