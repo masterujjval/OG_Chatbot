@@ -157,8 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function sendMessage() {
     const promptInput = document.getElementById('prompt');
+    
     const prompt = promptInput.value.trim();
     if (!prompt) return;
+    promptInput.value = '';
 
     const temperature = parseFloat(document.getElementById('temperature').value);
     const topP = parseFloat(document.getElementById('top-p').value);
