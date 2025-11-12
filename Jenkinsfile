@@ -14,6 +14,7 @@ build job: "sonar_checker"
 // Now to do rest of functionalites
 
 stage("Tests"){
+	checkout scm
 try{
 sh 'python3 test_app.py'
 currentBuild.result="SUCCESS"
