@@ -9,14 +9,16 @@ node ("aws_slave") {
 
 
 stage("Code Analysis"){
-build job: "sonar_checker"
+build job: "chatbot/sonar_checker"
 }
 // Now to do rest of functionalites
 
 stage("Tests"){
 	checkout scm
 try{
+
 sh '''
+
 pip3 install -r requirements.txt
 python3 test_app.py
 '''
