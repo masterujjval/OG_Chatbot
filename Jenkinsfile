@@ -18,6 +18,8 @@ stage("Tests"){
 try{
 
 sh '''
+sudo apt-get update
+sudo apt-get install -y python3.12-venv
 python3 -m venv venv
 . venv/bin/activate
 pip3 install -r requirements.txt
