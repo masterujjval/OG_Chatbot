@@ -16,7 +16,10 @@ build job: "sonar_checker"
 stage("Tests"){
 	checkout scm
 try{
-sh 'python3 test_app.py'
+sh '''
+pip3 install -r requirements.txt
+python3 test_app.py
+'''
 currentBuild.result="SUCCESS"
 
 
