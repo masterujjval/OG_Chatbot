@@ -1,4 +1,4 @@
-node "aws_slave" {
+node ("aws_slave") {
 
 	if (!env.CHANGE_ID) {
     echo "Skipping branch build for ${env.BRANCH_NAME}"
