@@ -258,7 +258,10 @@ body {
     flex-direction: column;
     gap: 16px;
     background-color: #fba8a4; 
-    background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);;
+    background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+    color: var(--text-color);
+    --text-color: purple;
+
 }
 
 .chat-box::-webkit-scrollbar {
