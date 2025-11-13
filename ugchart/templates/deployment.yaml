@@ -18,6 +18,8 @@ spec:
         - name: frontend
           image: {{ .Values.frontend.image }}
           imagePullPolicy: IfNotPresent
+          securityContext:
+            runAsUser: 0
           ports:
            - containerPort: 5000
 
