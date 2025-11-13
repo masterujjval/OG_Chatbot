@@ -1,5 +1,5 @@
 # chatbot
-# Guide for nerds
+# Guide for nerds...
 ## Installation
 - Create ```.env``` file and add your API KEY
 - Install ```helm``` and ```k8s``` on your system
