@@ -2,13 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: chatbot
-
 spec:
   replicas: {{ .Values.replica }}
   selector:
     matchLabels:
       app: chatbot
-
   template:
     metadata:
       labels:
@@ -18,8 +16,12 @@ spec:
         - name: frontend
           image: {{ .Values.frontend.image }}
           imagePullPolicy: IfNotPresent
-          securityContext:
-            runAsUser: 0
           ports:
-           - containerPort: 5000
-
+            - containerPort: 5000
+          volumeMounts:
+            - name: upload-volume
+              mountPath: /app/uploads
+        
+      volumes:
+        - name: upload-volume
+          emptyDir: {}
