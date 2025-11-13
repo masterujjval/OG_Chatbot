@@ -7,7 +7,7 @@ print(API_KEY)
 BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
 def query_llm(prompt, temperature, top_p, top_k, context=None):
-    url = f"{BASE_URL}?key=AIzaSyC5D-gukYyzY7uIH5pgVjlTVwTRUHyy1xA"
+    url = f"{BASE_URL}?key={API_KEY}"
     
     full_prompt = prompt
     if context:
