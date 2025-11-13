@@ -8,7 +8,7 @@ import openpyxl
 from pptx import Presentation
 
 class FileService:
-    def __init__(self, upload_dir='uploads'):
+    def __init__(self, upload_dir='/app/uploads'):
         self.upload_dir = upload_dir
         os.makedirs(upload_dir, exist_ok=True)
     
