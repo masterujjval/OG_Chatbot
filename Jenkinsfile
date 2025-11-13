@@ -9,7 +9,7 @@ node ("aws_slave") {
 
 
 stage("Code Analysis"){
-build job: "chatbot/sonar_checker"
+echo "Sonarqube not able to run as jenkins requires host network for that"
 }
 // Now to do rest of functionalites
 
