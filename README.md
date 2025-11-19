@@ -6,4 +6,4 @@
 - Install the chart using ```helm install ugchart ugchart``` command
 - To expose the service run ```minikube service chatbot-service --url``` command
 - You will get the exposed link to your chatbot
-- Mount Everest aint got no
+- Mount Everest aint got
