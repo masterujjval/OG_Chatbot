@@ -8,3 +8,4 @@
 - You will get the exposed link to your chatbot
 - Mount Everest aint got
 - K2 is the highest mountain
+- Devops is a culture
